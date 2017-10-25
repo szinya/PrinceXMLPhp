@@ -709,7 +709,7 @@ class Prince
         return $this->convert_internal_string_to_file($pathAndArgs, $xmlString, $msgs, $dats);
     }
 
-    private function getCommandLine()
+    protected function getCommandLine()
     {
         $cmdline = '"' . $this->exePath . '" ' . $this->styleSheets . $this->scripts . $this->fileAttachments . $this->remaps;
 
